@@ -67,7 +67,12 @@ export default function Home() {
             Built by{" "}
             <a href="https://www.linkedin.com/in/donaldaditya/" target="_blank" rel="noopener noreferrer"
               className="underline underline-offset-2 hover:text-gray-900 transition-colors">
-              Donald Aditya
+                         Donald Aditya
+            </a>
+            {" · "}
+            <a href="mailto:donald.aditya@gmail.com"
+              className="underline underline-offset-2 hover:text-gray-900 transition-colors">
+              donald.aditya@gmail.com
             </a>
             . The goal is simple: make AI genuinely useful for the people doing
             the work — analysts, operators, managers — without adding complexity or
@@ -81,7 +86,7 @@ export default function Home() {
       </section>
 
       <footer className="border-t border-gray-50 max-w-4xl mx-auto px-6 py-6 flex items-center justify-between">
-        <span className="text-xs text-gray-300">DA System · Indonesia</span>
+        <span className="text-xs text-gray-300">DA System </span>
         <a href="https://www.linkedin.com/in/donaldaditya/" target="_blank" rel="noopener noreferrer"
           className="text-xs text-gray-300 hover:text-gray-500 transition-colors">
           linkedin.com/in/donaldaditya
