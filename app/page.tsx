@@ -57,6 +57,23 @@ export default function Home() {
             </p>
             <div className="mt-4 text-xs text-gray-300 group-hover:text-gray-500 transition-colors">Open tool →</div>
           </a>
+
+          <a href="/instagram"
+            className="group block bg-white border border-gray-100 rounded-xl p-6 hover:border-gray-300 hover:shadow-sm transition-all">
+            <div className="flex items-center justify-between mb-4">
+              <span className="text-xs text-gray-400 uppercase tracking-wider">Tool 03</span>
+              <div className="flex items-center gap-2">
+                <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-500">Live</span>
+                <span className="text-xs px-2 py-0.5 rounded-full bg-amber-50 text-amber-600 border border-amber-100">Private</span>
+              </div>
+            </div>
+            <div className="text-sm font-medium mb-2">Instagram Content</div>
+            <p className="text-xs text-gray-400 leading-relaxed">
+              Weekly content planner, caption generator, and posting tracker for
+              @whatdonaldeatss. Drive-connected. Reel-first schedule.
+            </p>
+            <div className="mt-4 text-xs text-gray-300 group-hover:text-gray-500 transition-colors">Open tool →</div>
+          </a>
         </div>
       </section>
 
@@ -67,7 +84,7 @@ export default function Home() {
             Built by{" "}
             <a href="https://www.linkedin.com/in/donaldaditya/" target="_blank" rel="noopener noreferrer"
               className="underline underline-offset-2 hover:text-gray-900 transition-colors">
-                         Donald Aditya
+              Donald Aditya
             </a>
             {" · "}
             <a href="mailto:donald.aditya@gmail.com"
@@ -86,7 +103,7 @@ export default function Home() {
       </section>
 
       <footer className="border-t border-gray-50 max-w-4xl mx-auto px-6 py-6 flex items-center justify-between">
-        <span className="text-xs text-gray-300">DA System </span>
+        <span className="text-xs text-gray-300">DA System</span>
         <a href="https://www.linkedin.com/in/donaldaditya/" target="_blank" rel="noopener noreferrer"
           className="text-xs text-gray-300 hover:text-gray-500 transition-colors">
           linkedin.com/in/donaldaditya
