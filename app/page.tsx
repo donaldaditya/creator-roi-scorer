@@ -29,7 +29,7 @@ export default function Home() {
 
       <section className="max-w-4xl mx-auto px-6 pb-20">
         <p className="text-xs text-gray-400 uppercase tracking-widest mb-4">Tools</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           <a href="/creator-score"
             className="group block bg-white border border-gray-100 rounded-xl p-6 hover:border-gray-300 hover:shadow-sm transition-all">
             <div className="flex items-center justify-between mb-4">
