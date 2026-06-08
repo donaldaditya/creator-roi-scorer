@@ -77,35 +77,35 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-t border-gray-50 max-w-4xl mx-auto px-6 py-16">
+      <section className="border-t border-gray-100 max-w-4xl mx-auto px-6 py-16">
         <p className="text-xs text-gray-400 uppercase tracking-widest mb-4">About</p>
         <div className="max-w-xl">
-          <p className="text-sm text-gray-600 leading-relaxed mb-3">
+          <p className="text-sm text-gray-700 leading-relaxed mb-3">
             Built by{" "}
             <a href="https://www.linkedin.com/in/donaldaditya/" target="_blank" rel="noopener noreferrer"
-              className="underline underline-offset-2 hover:text-gray-900 transition-colors">
+              className="text-gray-900 font-medium underline underline-offset-2 hover:text-gray-600 transition-colors">
               Donald Aditya
             </a>
             {" · "}
             <a href="mailto:donald.aditya@gmail.com"
-              className="underline underline-offset-2 hover:text-gray-900 transition-colors">
+              className="text-gray-900 underline underline-offset-2 hover:text-gray-600 transition-colors">
               donald.aditya@gmail.com
             </a>
             . The goal is simple: make AI genuinely useful for the people doing
             the work — analysts, operators, managers — without adding complexity or
             obscuring the decision behind the output.
           </p>
-          <p className="text-sm text-gray-400 leading-relaxed">
+          <p className="text-sm text-gray-500 leading-relaxed">
             Every tool here is designed around one principle: AI should clarify,
             not replace. The human stays in the loop. The model does the heavy lifting.
           </p>
         </div>
       </section>
 
-      <footer className="border-t border-gray-50 max-w-4xl mx-auto px-6 py-6 flex items-center justify-between">
-        <span className="text-xs text-gray-300">DA System</span>
+      <footer className="border-t border-gray-100 max-w-4xl mx-auto px-6 py-6 flex items-center justify-between">
+        <span className="text-xs text-gray-400">DA System</span>
         <a href="https://www.linkedin.com/in/donaldaditya/" target="_blank" rel="noopener noreferrer"
-          className="text-xs text-gray-300 hover:text-gray-500 transition-colors">
+          className="text-xs text-gray-400 hover:text-gray-700 transition-colors">
           linkedin.com/in/donaldaditya
         </a>
       </footer>
