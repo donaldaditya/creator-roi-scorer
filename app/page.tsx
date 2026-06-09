@@ -29,7 +29,7 @@ export default function Home() {
 
       <section className="max-w-4xl mx-auto px-6 pb-20">
         <p className="text-xs text-gray-400 uppercase tracking-widest mb-4">Tools</p>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
           <a href="/creator-score"
             className="group block bg-white border border-gray-100 rounded-xl p-6 hover:border-gray-300 hover:shadow-sm transition-all">
             <div className="flex items-center justify-between mb-4">
@@ -71,6 +71,24 @@ export default function Home() {
             <p className="text-xs text-gray-400 leading-relaxed">
               Weekly content planner, caption generator, and posting tracker for
               @whatdonaldeatss. Drive-connected. Reel-first schedule.
+            </p>
+            <div className="mt-4 text-xs text-gray-300 group-hover:text-gray-500 transition-colors">Open tool →</div>
+          </a>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <a href="/affiliates_calculator"
+            className="group block bg-white border border-gray-100 rounded-xl p-6 hover:border-gray-300 hover:shadow-sm transition-all">
+            <div className="flex items-center justify-between mb-4">
+              <span className="text-xs text-gray-400 uppercase tracking-wider">Tool 04</span>
+              <div className="flex items-center gap-2">
+                <span className="text-xs px-2 py-0.5 rounded-full bg-blue-50 text-blue-600">New</span>
+                <span className="text-xs px-2 py-0.5 rounded-full bg-amber-50 text-amber-600 border border-amber-100">Invite Only</span>
+              </div>
+            </div>
+            <div className="text-sm font-medium mb-2">Affiliates Calculator</div>
+            <p className="text-xs text-gray-400 leading-relaxed">
+              Brief → pitch → portfolio → performance. Bottom-up GMV forecast,
+              Emtek margin block, creator roster, and Scale/Optimize/Drop rules.
             </p>
             <div className="mt-4 text-xs text-gray-300 group-hover:text-gray-500 transition-colors">Open tool →</div>
           </a>
