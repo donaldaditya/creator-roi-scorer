@@ -92,6 +92,20 @@ export default function Home() {
             </p>
             <div className="mt-4 text-xs text-gray-300 group-hover:text-gray-500 transition-colors">Open tool →</div>
           </a>
+
+          <a href="/wtf"
+            className="group block bg-white border border-gray-100 rounded-xl p-6 hover:border-gray-300 hover:shadow-sm transition-all">
+            <div className="flex items-center justify-between mb-4">
+              <span className="text-xs text-gray-400 uppercase tracking-wider">Tool 05</span>
+              <span className="text-xs px-2 py-0.5 rounded-full bg-blue-50 text-blue-600">New</span>
+            </div>
+            <div className="text-sm font-medium mb-2">WTF — What to Find</div>
+            <p className="text-xs text-gray-400 leading-relaxed">
+              Ask Mocha the Yorkie for restaurants and trip plans in Japan. Scored by
+              Google, Tabelog, and social buzz. Day-by-day itineraries, shareable.
+            </p>
+            <div className="mt-4 text-xs text-gray-300 group-hover:text-gray-500 transition-colors">Open tool →</div>
+          </a>
         </div>
       </section>
 
