@@ -14,12 +14,12 @@
       "destination": "https://da-affiliates-calculator-production.up.railway.app/"
     },
     {
-      "source": "/wtf/:path*",
-      "destination": "https://wtf-donaldadityas-projects.vercel.app/wtf/:path*"
-    },
-    {
       "source": "/wtf",
       "destination": "https://wtf-donaldadityas-projects.vercel.app/wtf"
+    },
+    {
+      "source": "/wtf/:path+",
+      "destination": "https://wtf-donaldadityas-projects.vercel.app/wtf/:path+"
     }
   ]
 }
