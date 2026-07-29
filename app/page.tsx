@@ -1,12 +1,20 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-white text-gray-900">
       <nav className="border-b border-gray-100 px-6 py-4 flex items-center justify-between max-w-4xl mx-auto">
-        <div className="flex items-center gap-3">
-          <div className="w-8 h-8 bg-gray-900 rounded-md flex items-center justify-center">
-            <span className="text-white text-xs font-medium">DA</span>
+        <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
+            <div className="w-8 h-8 bg-gray-900 rounded-md flex items-center justify-center">
+              <span className="text-white text-xs font-medium">DA</span>
+            </div>
+            <span className="text-sm font-medium">DA System</span>
           </div>
-          <span className="text-sm font-medium">DA System</span>
+          <div className="flex items-center gap-4 text-xs text-gray-400">
+            <Link href="/thesis" className="hover:text-gray-700 transition-colors">Thesis</Link>
+            <Link href="/writing" className="hover:text-gray-700 transition-colors">Writing</Link>
+          </div>
         </div>
         <a href="https://www.linkedin.com/in/donaldaditya/" target="_blank" rel="noopener noreferrer"
           className="text-xs text-gray-400 hover:text-gray-700 transition-colors">

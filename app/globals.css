@@ -154,3 +154,77 @@ body {
   background: rgba(0, 212, 255, 0.2);
   color: var(--text-primary);
 }
+
+/* ─── Long-form article body (/thesis, /writing/*) ──────────────────────────
+   Light theme to match the homepage, independent of the dark tool theme above. */
+
+.article-body {
+  max-width: 68ch;
+  color: #374151; /* gray-700 */
+  font-size: 0.9375rem;
+  line-height: 1.7;
+}
+
+.article-body > * + * {
+  margin-top: 1.25em;
+}
+
+.article-body h2 {
+  color: #111827; /* gray-900 */
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  margin-top: 2.25em;
+}
+
+.article-body h3 {
+  color: #111827;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  margin-top: 1.75em;
+}
+
+.article-body p,
+.article-body ul,
+.article-body ol {
+  line-height: 1.7;
+}
+
+.article-body strong {
+  color: #111827;
+  font-weight: 600;
+}
+
+.article-body a {
+  color: #111827;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.article-body a:hover {
+  color: #4b5563;
+}
+
+.article-body hr {
+  border: none;
+  border-top: 1px solid #f3f4f6; /* gray-100 */
+  margin: 2.5em 0;
+}
+
+.article-body ul,
+.article-body ol {
+  padding-left: 1.25em;
+}
+
+.article-body li + li {
+  margin-top: 0.5em;
+}
+
+.article-body em {
+  color: #6b7280; /* gray-500 */
+}
+
+.article-body svg {
+  display: block;
+  max-width: 100%;
+}
