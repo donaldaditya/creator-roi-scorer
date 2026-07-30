@@ -42,6 +42,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* body is a fixed-height (height:100%) flex column with <main> as its only
+   child. Flex items default to flex-shrink:1, so any page taller than one
+   viewport gets its <main> squeezed down to viewport height while the
+   overflowing content keeps rendering outside that box — exposing the dark
+   body background beneath it. flex-shrink:0 lets main grow to fit its
+   content instead, as every page here actually wants. */
+body > main {
+  flex-shrink: 0;
+}
+
 /* ─── Custom Scrollbar ───────────────────────────────────────────────────── */
 
 ::-webkit-scrollbar {
