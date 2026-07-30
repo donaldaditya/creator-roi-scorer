@@ -41,34 +41,27 @@ So the design question changed. Not "how do I generate personas faster" but "whi
   <rect width="1200" height="630" fill="#0b1a2e"/>
   <text x="60" y="64" fill="#ffffff" font-family="system-ui,sans-serif" font-size="28" font-weight="600">Persona production, end to end</text>
   <text x="60" y="94" fill="#85B7EB" font-family="system-ui,sans-serif" font-size="15">Ten steps · three phases · 2.5 hours</text>
-
   <!-- Phase A -->
   <rect x="60" y="130" width="330" height="440" rx="10" fill="none" stroke="#1c3a5e" stroke-width="1.5"/>
   <text x="80" y="162" fill="#85B7EB" font-family="system-ui,sans-serif" font-size="13" letter-spacing="1.5" font-weight="600">PHASE A — DATA WORK</text>
   <text x="80" y="182" fill="#6f8caf" font-family="system-ui,sans-serif" font-size="12">~55 min · manager solo</text>
-
   <g font-family="system-ui,sans-serif">
     <rect x="80" y="200" width="290" height="56" rx="6" fill="#122641"/>
     <text x="96" y="222" fill="#ffffff" font-size="13" font-weight="600">1. Surface scan of the account</text>
     <text x="96" y="240" fill="#6f8caf" font-size="11">Retrieval</text>
-
     <rect x="80" y="266" width="290" height="56" rx="6" fill="#122641"/>
     <text x="96" y="288" fill="#ffffff" font-size="13" font-weight="600">2. Top-20 post audit, 11 dimensions</text>
     <text x="96" y="306" fill="#6f8caf" font-size="11">Retrieval</text>
-
     <rect x="80" y="332" width="290" height="56" rx="6" fill="#122641"/>
     <text x="96" y="354" fill="#ffffff" font-size="13" font-weight="600">3. Audience pull — demo, interests, hours</text>
     <text x="96" y="372" fill="#6f8caf" font-size="11">Retrieval</text>
-
     <rect x="80" y="398" width="290" height="56" rx="6" fill="#122641"/>
     <text x="96" y="420" fill="#ffffff" font-size="13" font-weight="600">4. Comment mining, fixed sample</text>
     <text x="96" y="438" fill="#6f8caf" font-size="11">Retrieval</text>
-
     <rect x="80" y="464" width="290" height="46" rx="6" fill="#0e1e34" stroke="#1c3a5e"/>
     <text x="96" y="484" fill="#6f8caf" font-size="12">+ cross-platform / competitor map</text>
     <text x="96" y="500" fill="#6f8caf" font-size="11" fill-opacity="0.7">Scale-tier only — skipped at entry</text>
   </g>
-
   <!-- Phase B -->
   <rect x="435" y="130" width="330" height="200" rx="10" fill="none" stroke="#1c3a5e" stroke-width="1.5"/>
   <text x="455" y="162" fill="#85B7EB" font-family="system-ui,sans-serif" font-size="13" letter-spacing="1.5" font-weight="600">PHASE B — ENGAGEMENT</text>
@@ -79,7 +72,6 @@ So the design question changed. Not "how do I generate personas faster" but "whi
     <text x="471" y="248" fill="#6f8caf" font-size="11">Surfaces ambition + red lines.</text>
     <text x="471" y="264" fill="#6f8caf" font-size="11">Cannot be automated.</text>
   </g>
-
   <!-- Phase C -->
   <rect x="810" y="130" width="330" height="440" rx="10" fill="none" stroke="#1c3a5e" stroke-width="1.5"/>
   <text x="830" y="162" fill="#85B7EB" font-family="system-ui,sans-serif" font-size="13" letter-spacing="1.5" font-weight="600">PHASE C — PRODUCTION</text>
@@ -89,22 +81,18 @@ So the design question changed. Not "how do I generate personas faster" but "whi
     <text x="846" y="222" fill="#ffffff" font-size="13" font-weight="600">8. Synthesis — 8-field brief</text>
     <text x="846" y="240" fill="#6f8caf" font-size="11">15 min · manager's hypothesis</text>
     <text x="846" y="256" fill="#6f8caf" font-size="11">is the field that matters most</text>
-
     <rect x="830" y="282" width="290" height="70" rx="6" fill="#122641"/>
     <text x="846" y="304" fill="#ffffff" font-size="13" font-weight="600">9. AI drafting + edit</text>
     <text x="846" y="322" fill="#6f8caf" font-size="11">10 min · two distinct directions</text>
     <text x="846" y="338" fill="#6f8caf" font-size="11">never raw data to the model</text>
-
     <rect x="830" y="364" width="290" height="70" rx="6" fill="#122641"/>
     <text x="846" y="386" fill="#ffffff" font-size="13" font-weight="600">10. Lock with the creator</text>
     <text x="846" y="404" fill="#6f8caf" font-size="11">60 min · force a choice,</text>
     <text x="846" y="420" fill="#6f8caf" font-size="11">no combining</text>
-
     <rect x="830" y="450" width="290" height="60" rx="6" fill="#0e1e34" stroke="#85B7EB" stroke-opacity="0.4"/>
     <text x="846" y="474" fill="#85B7EB" font-size="12" font-weight="600">4 quality gates before a creator</text>
     <text x="846" y="492" fill="#6f8caf" font-size="11">sees a draft →</text>
   </g>
-
   <!-- arrows -->
   <path d="M370 300 L435 230" stroke="#1c3a5e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
   <path d="M765 250 L810 300" stroke="#1c3a5e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
@@ -113,7 +101,6 @@ So the design question changed. Not "how do I generate personas faster" but "whi
       <path d="M0,0 L6,3 L0,6 Z" fill="#1c3a5e"/>
     </marker>
   </defs>
-
   <text x="60" y="600" fill="#6f8caf" fill-opacity="0.6" font-family="system-ui,sans-serif" font-size="12">da-system.ai</text>
 </svg>
 
