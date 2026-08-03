@@ -238,3 +238,185 @@ body > main {
   display: block;
   max-width: 100%;
 }
+
+/* ─── /thesis — dedicated design, scoped under .thesis-doc ──────────────────
+   Ported from thesis-final-v4_2.html. Distinct accent (blue) and typographic
+   scale from the rest of the site — kept scoped so it can't leak into
+   /writing or the homepage. */
+
+.thesis-doc {
+  --td-ink: #0f1115;
+  --td-body: #3f4650;
+  --td-muted: #6b7280;
+  --td-line: #e5e7eb;
+  --td-surface: #fafaf9;
+  --td-accent: #1d4ed8;
+  --td-accent-ink: #1e3a8a;
+  --td-measure: 68ch;
+  max-width: var(--td-measure);
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+  color: var(--td-body);
+  font: 400 18px/1.65 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.thesis-doc h1 {
+  color: var(--td-ink);
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin: 0 0 8px;
+  font-weight: 600;
+}
+
+.thesis-doc h2 {
+  color: var(--td-ink);
+  font-size: 1.5rem;
+  line-height: 1.25;
+  margin: 56px 0 16px;
+  font-weight: 600;
+}
+
+.thesis-doc p {
+  margin: 0 0 24px;
+  max-width: var(--td-measure);
+}
+
+.thesis-doc a {
+  color: var(--td-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.thesis-doc a:hover {
+  color: var(--td-accent-ink);
+}
+
+.thesis-doc strong {
+  color: var(--td-ink);
+  font-weight: 600;
+}
+
+.thesis-doc .td-byline {
+  color: var(--td-ink);
+  font-size: 1.0625rem;
+  margin: 0 0 4px;
+}
+
+.thesis-doc .td-meta {
+  color: var(--td-muted);
+  font-size: 0.8125rem;
+  margin-bottom: 40px;
+}
+
+.thesis-doc .td-cap {
+  color: var(--td-muted);
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  margin: 8px 0 40px;
+}
+
+.thesis-doc .td-chart {
+  margin: 32px 0 0;
+  padding: 24px 16px 16px;
+  background: var(--td-surface);
+  border: 1px solid var(--td-line);
+  border-radius: 10px;
+}
+
+.thesis-doc .td-cw {
+  position: relative;
+  height: 300px;
+}
+
+.thesis-doc .td-cw.tall {
+  height: 360px;
+}
+
+.thesis-doc .td-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.thesis-doc .td-pair .td-cw {
+  height: 300px;
+}
+
+.thesis-doc .td-ph {
+  color: var(--td-ink);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+.thesis-doc .td-ct {
+  color: var(--td-ink);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  margin: 0 0 2px;
+}
+
+.thesis-doc .td-gate {
+  margin: 32px 0 0;
+}
+
+.thesis-doc .td-gate .td-g-head {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin: 0 0 8px;
+}
+
+.thesis-doc .td-gate .td-g-num {
+  flex: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--td-accent);
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 4px;
+}
+
+.thesis-doc .td-gate .td-g-title {
+  color: var(--td-ink);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.thesis-doc .td-gate p {
+  margin: 0;
+}
+
+.thesis-doc .td-cs {
+  color: var(--td-muted);
+  font-size: 0.75rem;
+  margin: 0 0 16px;
+}
+
+.thesis-doc hr {
+  border: 0;
+  border-top: 1px solid var(--td-line);
+  margin: 40px 0;
+}
+
+@media (max-width: 600px) {
+  .thesis-doc {
+    font-size: 17px;
+    padding: 32px 18px 72px;
+  }
+  .thesis-doc .td-cw {
+    height: 260px;
+  }
+  .thesis-doc .td-pair {
+    grid-template-columns: 1fr;
+  }
+}

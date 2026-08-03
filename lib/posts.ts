@@ -61,11 +61,3 @@ export function getAllPostsMeta(): (PostFrontmatter & { slug: string })[] {
     })
     .sort((a, b) => (a.date < b.date ? 1 : -1));
 }
-
-export async function getThesis(): Promise<Post> {
-  const filePath = path.join(process.cwd(), "content", "thesis.md");
-  const raw = fs.readFileSync(filePath, "utf-8");
-  const { data, content } = matter(raw);
-  const html = await renderMarkdown(content);
-  return { slug: "thesis", html, ...(data as PostFrontmatter) };
-}
