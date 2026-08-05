@@ -436,7 +436,7 @@ export default function ThesisPage() {
           <a href="https://www.linkedin.com/in/donaldaditya/" {...ext}>
             LinkedIn
           </a>
-          . I reply to everything.
+          . I would like to hear it.
         </p>
       </article>
     </main>
