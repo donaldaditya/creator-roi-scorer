@@ -244,7 +244,7 @@ body > main {
    scale from the rest of the site — kept scoped so it can't leak into
    /writing or the homepage. */
 
-.thesis-doc {
+.thesis-page {
   --td-ink: #0f1115;
   --td-body: #3f4650;
   --td-muted: #6b7280;
@@ -253,12 +253,77 @@ body > main {
   --td-accent: #1d4ed8;
   --td-accent-ink: #1e3a8a;
   --td-measure: 68ch;
+}
+
+.thesis-doc {
   max-width: var(--td-measure);
   margin: 0 auto;
-  padding: 48px 24px 96px;
+  padding: 64px 24px 96px;
   color: var(--td-body);
   font: 400 18px/1.65 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
+}
+
+.thesis-nav {
+  max-width: var(--td-measure);
+  margin: 0 auto;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--td-line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* ch resolves against this element's own font — match .thesis-doc's basis
+     (18px) so both containers compute the same pixel width from --td-measure
+     and share a left edge. Children below use rem, so this is invisible. */
+  font-size: 18px;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.thesis-nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.thesis-nav-mark {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  background: var(--td-ink);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thesis-nav-logo span:last-child {
+  color: var(--td-ink);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.thesis-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9375rem;
+  color: var(--td-body);
+}
+
+.thesis-nav-links a {
+  color: var(--td-body);
+  text-decoration: none;
+}
+
+.thesis-nav-links a:hover {
+  color: var(--td-ink);
+}
+
+.thesis-nav-links span {
+  color: var(--td-muted);
 }
 
 .thesis-doc h1 {
@@ -301,6 +366,7 @@ body > main {
 .thesis-doc .td-byline {
   color: var(--td-ink);
   font-size: 1.0625rem;
+  max-width: 52ch;
   margin: 0 0 4px;
 }
 
@@ -411,12 +477,18 @@ body > main {
 @media (max-width: 600px) {
   .thesis-doc {
     font-size: 17px;
-    padding: 32px 18px 72px;
+    padding: 40px 18px 72px;
   }
   .thesis-doc .td-cw {
     height: 260px;
   }
   .thesis-doc .td-pair {
     grid-template-columns: 1fr;
+  }
+  .thesis-doc .td-cap {
+    font-size: 0.875rem;
+  }
+  .thesis-nav {
+    padding: 14px 18px;
   }
 }

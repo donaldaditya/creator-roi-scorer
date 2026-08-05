@@ -6,11 +6,11 @@ import { getAllPostsMeta } from "@/lib/posts";
 const SITE_URL = "https://www.da-system.ai";
 
 export const metadata: Metadata = {
-  title: "Writing — DA System",
+  title: "Writing",
   description: "Notes on building and deploying AI tools inside a live P&L, and on commercializing AI in Southeast Asia.",
   alternates: { canonical: `${SITE_URL}/writing` },
   openGraph: {
-    title: "Writing — DA System",
+    title: "Writing",
     description: "Notes on building and deploying AI tools inside a live P&L, and on commercializing AI in Southeast Asia.",
     url: `${SITE_URL}/writing`,
     type: "website",

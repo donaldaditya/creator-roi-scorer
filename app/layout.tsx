@@ -7,7 +7,7 @@ const DESCRIPTION = "AI tools built to extend human judgement. Six production to
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: { default: TITLE, template: `%s — ${TITLE}` },
+  title: { default: "Donald Aditya · DA System", template: "%s · Donald Aditya · DA System" },
   description: DESCRIPTION,
   openGraph: {
     title: TITLE,

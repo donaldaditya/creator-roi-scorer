@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { SiteNav } from "@/components/ArticleLayout";
+import { ThesisNav } from "@/components/ThesisNav";
 import {
   ChartAdoptionStage,
   ChartBarriers,
@@ -13,10 +13,10 @@ import {
 const SITE_URL = "https://www.da-system.ai";
 const TITLE = "The AI race moved from capability to commercialisation";
 const DESCRIPTION =
-  "Companies buy AI at scale and cannot find the return in gross margin, headcount or cycle time. The scarce skill is getting a model into a business and keeping it there — that is commercial work.";
+  "Donald Aditya, commercial operator across nine Asian markets, on why the constraint on AI value is no longer the model but the work of getting one into a business and keeping it there.";
 
 export const metadata: Metadata = {
-  title: `${TITLE} — DA System`,
+  title: TITLE,
   description: DESCRIPTION,
   alternates: { canonical: `${SITE_URL}/thesis` },
   openGraph: {
@@ -38,14 +38,16 @@ const ext = { target: "_blank", rel: "noopener" as const };
 
 export default function ThesisPage() {
   return (
-    <main className="min-h-screen bg-white text-gray-900">
-      <SiteNav />
+    <main className="min-h-screen bg-white text-gray-900 thesis-page">
+      <ThesisNav />
       <article className="thesis-doc">
         <h1>The AI race moved from capability to commercialisation</h1>
         <p className="td-byline">
-          <strong>Donald Aditya</strong> · commercial operator, nine markets across Southeast Asia and Greater China
+          <strong>Donald Aditya</strong> · commercial operator, nine markets across
+          <br />
+          Southeast Asia and Greater China
         </p>
-        <p className="td-meta">August 2026</p>
+        <p className="td-meta">Last updated August 2026</p>
 
         <h2>The argument, in brief</h2>
         <p>
@@ -372,8 +374,8 @@ export default function ThesisPage() {
           So the gap here is not smaller because adoption is faster. It is wider. Two facts from the same report, usually
           read apart, explain it: less legacy technology, so layering something new on top is cheap, and more
           family-owned businesses, where direction comes from the owner. Buying is fast, and nobody below the owner can
-          authorise changing a process that works. Adoption without redesign: gate one failing for structural reasons,
-          since nobody below the owner can close the old road.
+          authorise changing a process that works. Adoption without redesign: gate three failing because gate one never
+          closed, since nobody below the owner can close the old road.
         </p>
         <p>
           The consumer side rhymes. Work by{" "}
