@@ -3,7 +3,7 @@ import { ImageResponse } from "next/og";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-const TITLE = "The AI race moved from capability to commercialisation";
+const TITLE = "The AI race moved from capability to commercialization";
 const DESCRIPTION =
   "Companies buy AI at scale and cannot find the return in gross margin, headcount or cycle time. The scarce skill is getting a model into a business and keeping it there.";
 

@@ -11,7 +11,7 @@ import {
 } from "@/components/ThesisCharts";
 
 const SITE_URL = "https://www.da-system.ai";
-const TITLE = "The AI race moved from capability to commercialisation";
+const TITLE = "The AI race moved from capability to commercialization";
 const DESCRIPTION =
   "Donald Aditya, commercial operator across nine Asian markets, on why the constraint on AI value is no longer the model but the work of getting one into a business and keeping it there.";
 
@@ -41,7 +41,7 @@ export default function ThesisPage() {
     <main className="min-h-screen bg-white text-gray-900 thesis-page">
       <ThesisNav />
       <article className="thesis-doc">
-        <h1>The AI race moved from capability to commercialisation</h1>
+        <h1>The AI race moved from capability to commercialization</h1>
         <p className="td-byline">
           <strong>Donald Aditya</strong> · commercial operator, nine markets across
           <br />
@@ -140,7 +140,7 @@ export default function ThesisPage() {
             Anthropic has gone from a standing start to annualised revenue in the tens of billions, with quarterly profit
             above $1 billion
           </a>
-          . Then commercialisation has not failed. It worked completely in the one market where the buyer needed no
+          . Then commercialization has not failed. It worked completely in the one market where the buyer needed no
           persuading. Everywhere else sits an organisation full of people who did not ask for this.
         </p>
 
