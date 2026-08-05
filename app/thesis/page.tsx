@@ -137,11 +137,11 @@ export default function ThesisPage() {
           </a>{" "}
           than three years ago, and{" "}
           <a href="https://newsletter.semianalysis.com/p/anthropic-3q26-profit-over-1b-the" {...ext}>
-            Anthropic has gone from a standing start to annualised revenue in the tens of billions, with quarterly profit
+            Anthropic has gone from a standing start to annualized revenue in the tens of billions, with quarterly profit
             above $1 billion
           </a>
           . Then commercialization has not failed. It worked completely in the one market where the buyer needed no
-          persuading. Everywhere else sits an organisation full of people who did not ask for this.
+          persuading. Everywhere else sits an organization full of people who did not ask for this.
         </p>
 
         <h2>The evidence, and what is wrong with it</h2>
@@ -162,11 +162,11 @@ export default function ThesisPage() {
           <a href="https://hai.stanford.edu/ai-index/2026-ai-index-report" {...ext}>
             2026 AI Index
           </a>{" "}
-          has 64% of organisations reporting improved innovation. On profitability, 36% improved against 36% no effect; on
+          has 64% of organizations reporting improved innovation. On profitability, 36% improved against 36% no effect; on
           revenue growth, 33% against 39%.
         </p>
         <figure className="td-chart">
-          <p className="td-ct">AI impact on organisational measures over the past year, 2025</p>
+          <p className="td-ct">AI impact on organizational measures over the past year, 2025</p>
           <p className="td-cs">% of respondents</p>
           <div className="td-cw">
             <ChartOrgImpact />
@@ -195,7 +195,7 @@ export default function ThesisPage() {
           <a href="https://www.gartner.com/en/articles/hype-cycle-for-agentic-ai" {...ext}>
             Gartner&apos;s April 2026 Hype Cycle
           </a>{" "}
-          puts agentic AI at the Peak of Inflated Expectations, with only 17% of organisations actually running agents, and
+          puts agentic AI at the Peak of Inflated Expectations, with only 17% of organizations actually running agents, and
           cost, security and governance controls maturing fastest. Its{" "}
           <a href="https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027" {...ext}>
             standing forecast of over 40% of agentic projects cancelled by end-2027
@@ -374,7 +374,7 @@ export default function ThesisPage() {
           So the gap here is not smaller because adoption is faster. It is wider. Two facts from the same report, usually
           read apart, explain it: less legacy technology, so layering something new on top is cheap, and more
           family-owned businesses, where direction comes from the owner. Buying is fast, and nobody below the owner can
-          authorise changing a process that works. Adoption without redesign: gate three failing because gate one never
+          authorize changing a process that works. Adoption without redesign: gate three failing because gate one never
           closed, since nobody below the owner can close the old road.
         </p>
         <p>
