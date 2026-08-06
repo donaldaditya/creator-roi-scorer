@@ -49,18 +49,41 @@ export default function ThesisPage() {
         </p>
         <p className="td-meta">Last updated August 2026</p>
 
-        <h2>The argument, in brief</h2>
-        <p>
-          People do pay for these tools, and they still capture far more value than they hand over in fees.{" "}
-          <a href="https://www.forbes.com/sites/siladityaray/2026/06/16/claude-makes-more-money-per-user-than-market-leader-chatgpt-report-finds/" {...ext}>
-            Revenue per user is climbing
-          </a>
-          , but it sits far below the surplus that users report, so most of the value never converts. Companies buy at scale
-          and cannot find the return in gross margin, headcount or cycle time. The infrastructure spend now has a repayment
-          schedule, so the scarce skill is getting a model into a business and keeping it there. That is commercial work.
-          The region I operate in has the widest version of the problem: companies here bought licences fast and left the
-          process untouched.
-        </p>
+        <h2>In short</h2>
+        <ul>
+          <li>
+            <strong>The claim:</strong> capability is no longer the bottleneck — commercialization is. Companies buy AI at
+            scale and have difficulties finding the return in gross margin, headcount or cycle time. The scarce skill is
+            getting a model into a business and keeping it there, and that is commercial work.
+          </li>
+          <li>
+            <strong>The deadline:</strong> roughly $3 trillion has gone into AI infrastructure since ChatGPT launched in
+            Nov 2022, and{" "}
+            <a href="https://dcahn.substack.com/p/ais-15t-question" {...ext}>
+              Cahn&apos;s arithmetic
+            </a>{" "}
+            puts the end-customer revenue needed to justify it at $1.5 trillion a year. Coding is the one place the money
+            has arrived; everywhere else, adoption has run ahead of return.
+          </li>
+          <li>
+            <strong>Why pilots stall:</strong> not the model. Five gates — someone owns the number and closes the old
+            road; a narrow, measurable workflow; a decision about what humans still decide; a named check before
+            shipping; an agreed expansion path.
+          </li>
+          <li>
+            <strong>The regional part:</strong> Southeast Asia has the widest version of the problem — the highest
+            piloting band anywhere and almost no non-adopters, yet six in ten report under 5% profit effect. Little
+            legacy technology makes buying cheap; owner-run firms mean nobody below the owner changes a process that
+            works.
+          </li>
+          <li>
+            <strong>What I do about it:</strong> read the problem from the commercial side, then build.{" "}
+            <a href="/">da-system.ai</a> is six working tools in a live P&amp;L; the{" "}
+            <a href="/writing/persona-system">persona system</a> cut a manager task from days to 2.5 hours.
+          </li>
+        </ul>
+
+        <hr />
 
         <h2>The deadline</h2>
         <p>

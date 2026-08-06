@@ -474,6 +474,17 @@ body > main {
   margin: 40px 0;
 }
 
+/* Same spacing values already used by .article-body's lists — thesis-doc
+   just never had a bulleted list before the "In short" section. */
+.thesis-doc ul {
+  padding-left: 1.25em;
+  line-height: 1.7;
+}
+
+.thesis-doc li + li {
+  margin-top: 0.5em;
+}
+
 @media (max-width: 600px) {
   .thesis-doc {
     font-size: 17px;
