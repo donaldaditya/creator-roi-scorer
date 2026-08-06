@@ -475,10 +475,20 @@ body > main {
 }
 
 /* Same spacing values already used by .article-body's lists — thesis-doc
-   just never had a bulleted list before the "In short" section. */
+   just never had a bulleted list before the "In short" section. Tailwind's
+   preflight resets list-style to none, so markers need restoring explicitly. */
 .thesis-doc ul {
   padding-left: 1.25em;
   line-height: 1.7;
+  list-style: disc;
+}
+
+.thesis-doc li {
+  padding-left: 0.25em;
+}
+
+.thesis-doc li::marker {
+  color: var(--td-accent);
 }
 
 .thesis-doc li + li {
