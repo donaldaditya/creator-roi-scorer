@@ -14,6 +14,9 @@ export type PostFrontmatter = {
   description: string;
   date: string;
   ogImage?: string;
+  // Optional override for the /writing index card blurb only. Falls back to
+  // `description` when absent, so existing posts render unchanged.
+  cardDescription?: string;
 };
 
 export type Post = PostFrontmatter & {

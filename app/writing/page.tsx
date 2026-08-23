@@ -51,7 +51,7 @@ export default function WritingIndex() {
                 {formatDate(post.date)}
               </time>
               <div className="text-base font-medium mt-2 mb-2 text-gray-900">{post.title}</div>
-              <p className="text-xs text-gray-400 leading-relaxed">{post.description}</p>
+              <p className="text-xs text-gray-400 leading-relaxed">{post.cardDescription || post.description}</p>
               <div className="mt-4 text-xs text-gray-300 group-hover:text-gray-500 transition-colors">Read →</div>
             </Link>
           ))}
