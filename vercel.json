@@ -2,8 +2,16 @@
   "name": "da-system-creator-score",
   "rewrites": [
     {
+      "source": "/livestream-analyzer/",
+      "destination": "https://da-system-livestream-analyzer-production.up.railway.app/livestream-analyzer/"
+    },
+    {
       "source": "/livestream-analyzer/:path*",
       "destination": "https://da-system-livestream-analyzer-production.up.railway.app/livestream-analyzer/:path*"
+    },
+    {
+      "source": "/affiliates_calculator/",
+      "destination": "https://da-affiliates-calculator-production.up.railway.app/"
     },
     {
       "source": "/affiliates_calculator/:path*",
@@ -15,6 +23,10 @@
     },
     {
       "source": "/wtf",
+      "destination": "https://wtf-donaldadityas-projects.vercel.app/wtf"
+    },
+    {
+      "source": "/wtf/",
       "destination": "https://wtf-donaldadityas-projects.vercel.app/wtf"
     },
     {
