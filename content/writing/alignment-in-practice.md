@@ -2,7 +2,7 @@
 title: "The Five Times I Stopped My AI System From Shipping"
 description: "What alignment looks like when you run a P&L"
 cardDescription: "Five moments where I overrode my own AI system, and what they taught me about who actually owns alignment in a commercial workflow."
-date: 2026-08-06
+date: 2026-08-24
 ogImage: /og/alignment-in-practice.png
 ---
 
