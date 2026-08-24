@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Providers } from "./providers";
 import "./globals.css";
 
 const SITE_URL = "https://www.da-system.ai";
@@ -29,7 +30,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en" className="h-full">
       <body className="min-h-full flex flex-col antialiased">
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
