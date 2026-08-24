@@ -21,9 +21,21 @@ import type { CaptureResult, PostHogConfig } from "posthog-js";
 export type Surface = "site" | "wtf" | "da_trading" | "instagram" | "affiliates" | "livestream";
 export type Tier = "content" | "locked";
 
+// Verified empirically: this project's key authenticates against US Cloud and
+// is rejected by EU. Region is fixed per PostHog account at signup.
 const REGION = process.env.NEXT_PUBLIC_POSTHOG_REGION === "eu" ? "eu" : "us";
 
-export const POSTHOG_KEY = process.env.NEXT_PUBLIC_POSTHOG_KEY ?? "";
+/**
+ * PostHog *project* API key. This is a publishable key — it is compiled into
+ * the client bundle and is visible to anyone who views the deployed
+ * JavaScript, so keeping it out of the repo would buy nothing. The secret
+ * Personal API key is a different credential and is not used here.
+ *
+ * Overridable via env so it can be rotated without a code change; rotate in
+ * PostHog → Settings → Project if it is ever abused.
+ */
+export const POSTHOG_KEY =
+  process.env.NEXT_PUBLIC_POSTHOG_KEY ?? "phc_AggoqCgB2mJBbMsxAjpxENiEq2nhU34YwstDBghPZ2hN";
 
 /** Same-origin proxy defined in next.config.ts — see the comment there. */
 export const POSTHOG_API_HOST = "/ingest";
@@ -31,11 +43,38 @@ export const POSTHOG_API_HOST = "/ingest";
 /** Real PostHog host, so "view in PostHog" deep links still resolve. */
 export const POSTHOG_UI_HOST = `https://${REGION}.posthog.com`;
 
-function stampSurface(surface: Surface, tier: Tier) {
+const CONTENT_PATH = /^\/(thesis|writing)(\/|$)|^\/$/;
+
+/**
+ * `tier` may be a literal (single-tier apps) or "by-url" for the main site,
+ * where autocapture is URL-scoped and the effective tier therefore differs
+ * per event. Deriving it from the event's own $current_url keeps the label
+ * honest, so "show me every content-tier event" cannot silently include a
+ * confidential route.
+ */
+function stampSurface(surface: Surface, tier: Tier | "by-url") {
   return (event: CaptureResult | null): CaptureResult | null => {
     if (!event) return null;
-    event.properties.surface = surface;
-    event.properties.surface_tier = tier;
+    // Defensive: before_send runs on every event, so anything thrown here
+    // silently drops all analytics. `properties` is typed as required but is
+    // not guaranteed present at runtime for every internal event.
+    try {
+      let effective: Tier;
+      if (tier === "by-url") {
+        let path = "";
+        try {
+          path = new URL(String(event.properties?.$current_url ?? "")).pathname;
+        } catch {
+          path = "";
+        }
+        effective = CONTENT_PATH.test(path) ? "content" : "locked";
+      } else {
+        effective = tier;
+      }
+      event.properties = { ...(event.properties ?? {}), surface, surface_tier: effective };
+    } catch {
+      // Enrichment is best-effort; never lose the event over it.
+    }
     return event;
   };
 }
@@ -108,6 +147,6 @@ export function mainSiteConfig(): Partial<PostHogConfig> {
     mask_all_element_attributes: false,
     capture_performance: { web_vitals: true, network_timing: true },
     rageclick: true,
-    before_send: stampSurface("site", "content"),
+    before_send: stampSurface("site", "by-url"),
   };
 }
